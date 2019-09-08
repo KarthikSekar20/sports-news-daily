@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Hammersmith+One");
+@import url("https://fonts.googleapis.com/css?family=Stylish");
+
+body {
+  background-color: #333;
+}
+h1 {
+  font-family: "Hammersmith", sans-serif;
+  line-height: 3.2rem;
+  margin: 20px 0;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-overlay {
+  overflow: hidden;
+  background-color: rgba(95, 93, 93, 0.767);
+}
+
+.card-text {
+  font-style: oblique;
+}
+
+.card-title {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "news-app",
+  "version": "1.0.0",
+  "description": "A web app that fetch daily sports headlines",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Karthik",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "request": "^2.88.0"
+  }
+}
