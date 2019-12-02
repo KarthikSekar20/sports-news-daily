@@ -16,15 +16,25 @@ function requestNews(req, res) {
     if (err) throw err;
     let payload = JSON.parse(body);
     let topNews = payload.articles;
-    const newsObj = topNews.map(news => {
-      return {
+    // const newsObj = topNews.map(news => {
+    //   return {
+    //     title: news.title,
+    //     desc: news.description,
+    //     imgUrl: news.urlToImage,
+    //     url: news.url
+    //   };
+    // });
+    var newsArr = [];
+    for (var i = 0; i < topNews.length; i++) {
+      var news = topNews[i];
+      newsArr.push({
         title: news.title,
         desc: news.description,
         imgUrl: news.urlToImage,
         url: news.url
-      };
-    });
-    res.render("index", { newsObj: newsObj });
+      });
+    }
+    res.render("index", { newsObj: newsArr });
   });
 }
 
